@@ -1,0 +1,83 @@
+@media (max-width: 740px)  {
+    html, body {
+        padding: 0;
+        margin:0;
+        width:100%;
+        height:100%;
+        overflow: auto;
+    }
+    .imagem{
+        margin-top: 20px;
+        padding: 20px;
+    }
+    .container{
+        display: block;
+    }
+    .section1{
+        width: 100%;
+        background-color: #3941e4;
+    }
+    .section2{
+        padding: 0;
+        width: 100%;
+        background-color: #3941e4;
+        color: #fff;
+    }
+    .historico{
+        display: block;
+    }
+    .historico h2{
+        text-align: center;
+    }
+    .historico div{
+        padding: 0 10px 5px 10px;
+    }
+    .trabalho,.academico{
+        width: 100%;
+    }
+    .nav-itens{
+        display: none;
+    }
+    .topnav{
+        display: flex;
+        justify-content: center;
+    }
+    .contato-curiosidades{
+       display: none;
+    }
+    .resumo-e-competencias{
+        display: block;
+    }
+    .resumo-e-competencias div h2{
+        justify-content: center;
+        display: flex;
+    }
+    .resumo-e-competencias div p{
+        padding: 0 10px 0 10px;
+    }
+    .resumo-e-competencias div:first-child{
+        width: 100%;
+    }
+    .nome-completo{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .informacoes .nome-completo{
+        display: flex;
+        text-align: center;
+    }
+    .informacoes .subtitulo{
+        text-align: center;
+    }
+    #linha-horizontal {
+        width: 100%;
+        border: 1px solid #fff;
+    }
+    #linha-horizontal-mobile {
+        width: 100%;
+        border: 1px solid #fff;
+    }
+}
+  

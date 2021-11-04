@@ -4,6 +4,7 @@ body{
     padding: 0;
     font-family: "Lucida" Grande, sans-serif;
     margin: 0;
+    width: 100%;
 }
 .container{
     display: flex;
