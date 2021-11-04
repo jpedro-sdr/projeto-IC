@@ -2,6 +2,7 @@
 body{
     box-sizing: border-box;
     padding: 0;
+    font-family: "Lucida" Grande, sans-serif;
     margin: 0;
 }
 .container{
@@ -10,18 +11,24 @@ body{
 .section1{
     width: 40%;
     background-color: #3941e4;
-
+}
+.section1 div:first-child{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .imagem{
-    width: 100%;
+    width: 85%;
 }
 .section2{
-    padding: 20px;
+    padding: 0 20px 0 20px;
     width: 60%;
+    background-color: #3941e4;
+    color: #fff;
 }
 #linha-horizontal {
     width: 95%;
-    border: 1px solid #000;
+    border: 1px solid #fff;
 }
 .resumo-e-competencias{
     display: flex;
@@ -39,7 +46,7 @@ body{
 }
 .contato-curiosidades{
     padding: 0 40px 20px 40px;
-    color: white;
+    color: #fff;
 }
 
 .topnav {
@@ -69,6 +76,7 @@ body{
 
   .logo{
       transition: 2s;
+      margin-left: 10px;
   }
   .logo:hover{
       transform:rotate(360deg);
@@ -90,3 +98,47 @@ body{
         color: rgb(255, 0, 0);
         font-size: 23px;
     }
+
+
+    span.tooltip {
+        text-decoration: none;
+        color: rgba(20, 2, 2, 1);
+        font-family: "Roboto";
+        font-size: 16px;
+        transition: all 0.4s ease;
+        -webkit-transition: all .4s ease;
+        padding: 5px;
+        position: relative;
+      }
+      span.tooltip:before {
+        content: attr(data-title);
+        background-color: rgb(206, 54, 54);
+        color: #FFF;
+        font-size: 13px;
+        padding: 10px;
+        box-sizing: border-box;
+        font-family: "Roboto";
+        position: absolute;
+        left: 0;
+        bottom: -50px;
+        width: 250px;
+        opacity: 0;
+        transition: all .4s ease;
+      }
+      span.tooltip:after {
+        content: "";
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+        left: 5px;
+        bottom: -16px;
+        border-style: solid;
+        border-width: 0 10px 10px 10px;
+        border-color: transparent transparent rgb(206, 54, 54); transparent;
+        transition: all .4s ease;
+      }
+      span.tooltip:hover:after,
+      span.tooltip:hover:before {
+        opacity: 1;
+      }
